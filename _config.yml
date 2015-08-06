@@ -1,23 +1,23 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: Никита Махов
+description: Фронтенд-разработка, игры и машины
+meta_description: "Никита Махов, Фронтенд-разработка, игры, машины"
 
 aboutPage: true
 
 markdown: redcarpet
 highlighter: pygments
 
-paginate: 20
+paginate: 5
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
-google_analytics: 'UA-XXXXXXXX-X'
+domain_name: 'http://defite.github.io'
+#google_analytics: 'UA-XXXXXXXX-X'
 disqus: false
 disqus_shortname: 'your-disqus-shortname'
 
 # Details for the RSS feed generator
-url:            'http://your-blog-url.example.com'
-author:         'Your Name'
-authorTwitter:  'YourTwitterUsername'
+url:            'http://defite.github.io'
+author:         'Никита Махов'
+authorTwitter:  'life_maniac'
 
 permalink:       /:year/:title/
 
