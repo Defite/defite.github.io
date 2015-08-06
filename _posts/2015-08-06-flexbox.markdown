@@ -10,7 +10,7 @@ description: Тестирую "гибкие блоки"
 
 Финальная разметка:
 
-```
+{% highlight html %}
 <div class="container">
   <article class="plate">
     <header>Some header</header>
@@ -56,33 +56,34 @@ description: Тестирую "гибкие блоки"
     <footer>Some footer</footer>
   </article>
 </div>
-```
+{% endhighlight %}
 
 Тут всё просто, переходим к стилям:
 
-```
+{% highlight css %}
 .container {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
 }
-```
+{% endhighlight %}
+
 Согласно [caniuse.com](http://caniuse.com/#search=flex) такого набора правил достаточно, чтобы поддержать все основные современные браузеры на десктопах и на мобильных устройствах. В пролете остаются IE версии 9 и ниже.
 
 Далее сами колонки (у меня они почему-то плитками называются). Самое быстрое решение (и без полифилов) было назначить им выравнивание по верхней координате в случае, если `flex` не сработает. Получилось так:
 
-```
+{% highlight css %}
 plate {
   ...
   display: inline-block
   vertical-align: top
   ...
 }
-```
+{% endhighlight %}
 
 Далее пошло все менее красиво, ибо центральной части я назначаю нижний внутренний отступ равный высоте подвала. У меня не было задачи делать его динамическим, поэтому такой вариант меня вполне устроил. Высоту подвала я не фиксирую, просто полагаюсь на отступ. Сам подвал расположен абсолютно и прибит к нижней части блока.
 
-```
+{% highlight css %}
 .plate .content {
   padding-bottom: 20px;
 }
@@ -91,7 +92,8 @@ plate {
   bottom: 0;
   width: 100%;
 }
-```
+{% endhighlight %}
+
 Ну и собственно само демо:
 
 <a class="jsbin-embed" href="http://jsbin.com/tofuru/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
