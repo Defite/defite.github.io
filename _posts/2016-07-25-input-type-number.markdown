@@ -29,4 +29,4 @@ input[type=number]::-webkit-inner-spin-button {
 <input type="number" pattern="[0-9]*" />
 {% endhighlight %}
 
-**Демо:** http://jsbin.com/tazobel/1/edit?html,css,output
+**Демо:** [http://jsbin.com/tazobel/1/edit?html,css,output](http://jsbin.com/tazobel/1/edit?html,css,output)
