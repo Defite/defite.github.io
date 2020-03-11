@@ -1,9 +1,21 @@
 <div class="profile">
-    <section id="wrapper">
+    <section class="wrapper">
         <header id="header">
-            <a href='{{ site.baseurl }}about'>
-                <img id="avatar" class="2x" src='/assets/images/{{ site.avatar }}'/>
+        {% if site.aboutPage %}
+            <a href="{{ "/" | relative_url  }}about">
+                <img id="avatar"
+                    src="{{ "/" | relative_url  }}assets/images/{{ site.avatar }}"
+                    srcset="{{ "/" | relative_url  }}assets/images/{{ site.avatar }} 1x, {{ "/" | relative_url  }}assets/images/{{ site.avatar2x }} 2x"
+                    alt="Dude Lebowski from Simpsons"
+                />
             </a>
+        {% else %}
+            <img id="avatar"
+                src="{{ "/" | relative_url  }}assets/images/{{ site.avatar }}"
+                srcset="{{ "/" | relative_url  }}assets/images/{{ site.avatar }} 1x, {{ "/" | relative_url  }}assets/images/{{ site.avatar2x }} 2x"
+                
+            />
+        {% endif %}
             <h1>{{ site.author }}</h1>
             <h2>{{ site.description }}</h2>
         </header>

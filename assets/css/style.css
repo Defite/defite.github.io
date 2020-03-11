@@ -69,7 +69,7 @@ h2 {
 	color: #bbb;
 }
 
-.profile #wrapper {
+.profile .wrapper {
 	padding: 100px 40px 0px;
 	max-width: 600px;
 	margin: 0 auto;
@@ -138,13 +138,13 @@ nav.main-nav a.cta {
 	margin-left: 12px;
 }
 
-#wrapper {
+.wrapper {
   max-width: 600px;
   margin: 0 auto;
   padding: 60px 40px 100px 40px;
 }
 
-#wrapper.home {
+.wrapper.home {
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 0px 40px 20px 40px;
@@ -227,7 +227,7 @@ em, i { font-style: italic; }
 }
 
 .post h1 {
-	margin-bottom:2 0px;
+	margin-bottom: 20px;
 	color: #222;
 	font: 300 32px/1.4em "Helvetica Neue", Helvetica,Arial,sans-serif;
 }
@@ -577,7 +577,7 @@ h2.month {
 	color: #5694f1;
 }
 
-#post-meta img.avatar {
+#post-meta img#avatar {
   height: 36px;
   width: 36px;
   float: left;
@@ -588,9 +588,8 @@ h2.month {
 }
 
 #post-list.archive.readmore h3{
-
-	  font: 400 20px "Helvetica Neue", Helvetica,Arial,sans-serif;
-	  margin-bottom: 30px;
+	font: 400 20px "Helvetica Neue", Helvetica,Arial,sans-serif;
+	margin-bottom: 30px;
 }
 
 #post-list.archive.readmore a{
@@ -624,7 +623,7 @@ h2.month {
 
 /* Media Queries */
 @media screen and (max-width: 540px) {
-	#wrapper { padding:20px 20px 20px 20px;}
+	.wrapper { padding:20px 20px 20px 20px;}
 	#header { margin-bottom: 60px; border-bottom: 1px solid #eee; }
 	.post { margin: 40px 0; }
 	#footer { margin-top: 60px; }

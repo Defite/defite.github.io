@@ -1,17 +1,19 @@
 name: Никита Махов
 description: Фронтенд-разработка, игры и машины
-meta_description: "Никита Махов, Фронтенд-разработка, игры, машины"
-avatar: 'lebowski.png'
+meta_description: Никита Махов, фронтенд-разработка, игры, машины
+
+avatar: lebowski.png
+avatar2x: lebowski@2x.png
 
 aboutPage: true
 
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 
+plugins: [jekyll-paginate]
 paginate: 5
-baseurl: /
 domain_name: 'http://defite.github.io'
-#google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-XXXXXXXX-X'
 disqus: false
 disqus_shortname: 'your-disqus-shortname'
 
