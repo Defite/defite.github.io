@@ -1,9 +1,11 @@
 ---
-title: About
+title: Обо мне
 permalink: about/
 profile: true
 ---
 
-This is a static page. It could be an 'about page' if you'd like.
+Привет, меня зовут Никита. Я фронтенд-разработчик в [Mail.ru](https://mail.ru), уже почти два года делаю Медиапроекты. До этого пять лет работал в [Авто.ру](https://auto.ru), где занимался разработкой бэкофиса для клиентов. В настоящее время живу в Москве, но мечтаю перебраться в Хельсинки.
+
+В свободное время я занимаюсь фрилансом, изучаю [Vue.js](https://vuejs.org/), [React](https://reactjs.org/) и пилю секретный проект. Остальное время провожу в компании [Volvo](https://www.drive2.ru/r/volvo/v40_cross_country/480505823865339906/) или за играми вроде Overwatch, Gwent или Diablo 3.
 
 {% include footer.html %}
